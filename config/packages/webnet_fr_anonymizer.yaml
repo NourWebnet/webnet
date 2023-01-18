@@ -1,0 +1,9 @@
+# packages/dev/webnet_fr_anonymizer.yaml
+webnet_fr_database_anonymizer:
+    tables:
+        customers:
+            primary_key: [customerNumber]
+            fields:
+               customerName:
+                   generator: faker
+                   formatter: name
